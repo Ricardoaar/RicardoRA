@@ -1,6 +1,4 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
+import './imports.js';
 import Main from '@/components/Main';
 
 const App = () => {

@@ -79,9 +79,13 @@ const theme = createTheme({
     light: '#D4D4D4',
     dark: '#D4D4D4',
   },
+  typography: {
+    fontFamily: 'Quicksand, sans-serif',
+  },
 });
 
 
 const MaterialThemeProvider = ({ children, ...props }: IHasChildrenProp) => {
   return <ThemeProvider theme={theme} {...props}>{children}</ThemeProvider>;
 };
+export default MaterialThemeProvider;

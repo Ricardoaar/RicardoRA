@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from '@mui/material';
-import PageTitle from '@/components/PageTItle';
+import PageTitle from '@/Modules/Common/components/PageTItle';
 
 const Projects = () => {
   return (

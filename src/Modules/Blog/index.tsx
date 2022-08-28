@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTitle from '@/components/PageTItle';
+import PageTitle from '@/Modules/Common/components/PageTItle';
 
 const Blog = () => {
   return (

@@ -7,7 +7,7 @@ import GlobalTypographyProps from '@/typing/common/GlobalTypographyProps';
 
 const GlobalTypography = ({ children, colorVariant = 'primary', ...props }: GlobalTypographyProps) => {
   const { palette: { texts, mode, aux, secondaryText } }: MuiThemeProps = useTheme();
-  
+
   const color = useMemo(() => {
     const variantColors = {
       auxiliary: aux,
@@ -18,7 +18,7 @@ const GlobalTypography = ({ children, colorVariant = 'primary', ...props }: Glob
   }, [colorVariant, mode]);
 
   return (
-    <Typography color={color} {...props} >
+    <Typography sx={{ background: 'transparent' }} color={color} {...props} >
       {children}
     </Typography>
   );

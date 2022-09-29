@@ -14,6 +14,11 @@ export default interface MuiThemeProps {
       main: string;
       light: string;
       dark: string;
+    },
+    primary: {
+      main: string;
+      light: string;
+      dark: string;
     }
     mode: 'light' | 'dark';
   };

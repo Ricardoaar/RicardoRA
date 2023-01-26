@@ -5,10 +5,17 @@ const GlobalStyles = () => {
   return (
     <Global styles={({ background, palette: { mode } }) => {
       return css`* {
+
+        color: white;
         margin: 0;
         padding: 0;
-        background: ${background[mode]} no-repeat center center fixed;
-      }`;
+
+      }
+
+        html {
+          background: ${background[mode]} no-repeat center center fixed;
+        }
+      `;
     }} />
   );
 };

@@ -1,5 +1,6 @@
 {
-  "home.intro": "Hey! Welcome to my own website. Here you will find more about me, my skills, work experience and most of my personal project. I hope you’ll enjou it!\n",
+  "home.intro": "Hey! Welcome to my own website. Here you will find more about me, my skills, work experience and most of my personal projects.\n",
   "home.contact": "Contact me",
-  "home.skills": "Skills"
+  "home.skills": "Main Skills",
+  "skills.sass": "Sass"
 }

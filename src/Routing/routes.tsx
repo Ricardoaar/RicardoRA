@@ -21,12 +21,9 @@ const StyledBackgroundColor = styled.div`
 const Router = () => {
   return (
     <BrowserRouter>
-      <Navigation />
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
-          <Route path='Projects' element={<Projects />} />
-          <Route path='Blog' element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>

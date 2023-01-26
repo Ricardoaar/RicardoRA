@@ -6,14 +6,31 @@ import GlobalTypography from '@/Modules/Common/components/GlobalTypography';
 const ProjectsContainer = styled.div`
   display: flex;
   gap: 1rem;
-  //flex-wrap: wrap;
-  width: 60%;
+  width: 75%;
   overflow: auto;
-  min-height: 400px;
+  min-height: 320px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 768px) {
     width: 100%;
   }
+
+  //Change the scroll bar
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #f5f5f5;
+    height: 0.2rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #1410b0;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(114, 151, 252);
+  }
+
 `;
 
 const StyledCard = styled.div`
@@ -53,18 +70,26 @@ const Card = ({ image, header, footer }: CardProps) => {
   );
 };
 
+const CardContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+`;
 
 const Projects = () => {
   return (
     <ProjectsContainer>
-      <Card header={'Captain Avocados'} />
-      <Card header={'Captain Launches'} />
-      <Card header={'Super Store'} />
+      <CardContainer>
+        <Card header={'Captain Avocados'} />
+        <Card header={'Captain Launches'} />
+        <Card header={'Super Store'} />
 
-      <Card header={'Get Hired'} />
+        <Card header={'Get Hired'} />
 
-      <Card header={'PHP Store'} />
-      <Card header={'Pokedex'} footer={'Card description'} />
+        <Card header={'PHP Store'} />
+        <Card header={'Pokedex'} footer={'Card description'} />
+      </CardContainer>
+
     </ProjectsContainer>
   );
 };

@@ -28,11 +28,14 @@ const StyledMainContainer = styled.div`
   flex-direction: column;
   margin: 100px auto;
   justify-content: center;
+  align-items: center;
 `;
 const StyledMainSkillsAndContact = styled.div`
   display: flex;
   width: 90%;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20rem;
+  margin-top: 2rem;
   @media (max-width: 768px) {
     gap: 2rem;
   }
